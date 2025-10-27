@@ -12,17 +12,15 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 
 
-	int number;
-	cout << "Введите число для поиска делителей: ";
-	cin >> number;
 
-	cout << "Делители числа " << number << ": ";
-	for (int i = 1; i <= number; ++i) {
-		if (number % i == 0) {
-			cout << i << " ";
+	cout << "Таблица умножения:" << endl;
+
+	for (int i = 1; i <= 9; ++i) {
+		for (int j = 1; j <= 9; ++j) {
+			cout << setw(4) << i * j; // setw(4) устанавливает ширину поля вывода в 4 символа
 		}
+		cout << endl;
 	}
-	cout << endl;
 
 	return 0;
 }
